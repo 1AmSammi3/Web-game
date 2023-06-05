@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lan ="eng">
+    <head>
+        <meta charset ="utf8">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        <section class="section">
+            <div class="space"></div>
+            <h1 class="up">Welcome to the Ultimate Rock Paper Scissors game</h1>
+            <h3>So! what's it gonna be?
+        <h3>Are you gonna get smashed, cut or wrapped by our well trained AI.</h3>
+        <h3>Or are you gonna prove yourself of being worthy of victory.</h3>
+        <h3>Whatever it's gonna be, I bet it's gonna be fun!</h3>
+        <button class="button1"><a href="#ground">Take Me There</a></button>
+        </section>
+        <section id="ground" class="section">
+            <div class="space"></div>
+            <h1>ARE YOU READY FOR THIS</h1>
+            <button id="button2" onclick="button2()">Hell yeah</button>
+            <button id="button3" onclick="button3()">Not Really</button>
+            <h2 id="Comment">
+                </br>
+                </br>
+            </h2>
+            <a href="#thestage" id="stage">🤨</a>
+        </section>
+        <section id ="thestage" class="section">
+            <div class="space"></div>
+            <h1 class="up2">Choose Your Weapon</h1>
+            <div class="flex1">
+                <button class="rock" id="rock" onclick="rock()">✊</button>
+                <button class="paper" id="paper" onclick ="paper()">🖐️</button>
+                <button class="scissors" id="scissors" onclick="scissors()">✌️</button>
+            </div>
+            <div class="flex2">
+                <p class="rock2">ROCK</p>
+                <p class="paper2">PAPER</p>
+                <p class="scissors2">SCISSORS</p>
+            </div>
+            <div class="load">
+                ⚙️
+            </div>
+            <div class="score">
+                <h2>You:</br></br><span id="player"></span></h2>
+                <h2>AI:</br></br><span id="computer"></span></h2>
+            </div>
+            <h1 class="reply"></h1>
+            <div class="popup">
+            <div class="alert">This is a random demo text</div>
+            <a href="#thestage" onclick ="again()" class="retry">Go again 🤷</a>
+        </div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #000a1c;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 5px 5px 5px black;
+}
+h1{
+    margin: 50px;
+}
+h3{
+    margin: 50px;
+}
+.section{
+    min-height: 200vh;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.section.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.space{
+    min-height: 50vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.button1{
+    padding: 0px 27px 0px 27px;
+    height: 32px;
+    border: 0px;
+    place-item: center;
+    position: relative;
+    border-radius: 11px;
+    top: 4px;
+    color: white;
+    transitions: all .10s;
+    background-color: #7040ff;
+    animation-name: button1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes button1{
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 12px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+#button2{
+    padding: 0px 27px 0px 27px;
+    height: 32px;
+    border: 0px;
+    place-item: center;
+    position: relative;
+    border: solid 1px #7040ff;
+    border-radius: 11px;
+    top: 4px;
+    margin-right: 20px;
+    color: #7040ff;
+    transitions: all .10s;
+    background-color: #000a1c;
+}
+#button3{
+    padding: 0px 27px 0px 27px;
+    height: 32px;
+    border: 0px;
+    place-item: center;
+    position: relative;
+    border-radius: 11px;
+    top: 4px;
+    margin-right: 20px;
+    color: white;
+    transitions: all .10s;
+    background-color: #7040ff;
+}
+.button1:active{
+    background-color: #000a1c;
+    color: #7040ff;
+    border: solid 1px #7040ff;
+    transition: all .2s ease;
+}
+#button2:active{
+    background-color: #7040ff;
+    border: none;
+    color: white;
+    transition: all .2s ease;
+}
+#button3:active{
+    background-color: #000a1c;
+    color: #7040ff;
+    border: solid 1px #7040ff;
+    transition: all .2s ease;
+}
+.space{
+    min-height: 30vh;
+}
+#Comment{
+    margin: 50px;
+}
+#stage{
+    font-size: 30px;
+    background-color: #000a1c;
+    border: solid 1px #7040ff;
+    border-radius: 30px;
+    padding: 10px;
+    display: absolute;
+    top: 0;
+}
+#stage:active{
+    transition: all .2s;
+    top: 7px;
+    background-color: #7040ff;
+}
+.rock,.paper,.scissors{
+    font-size: 50px;
+    background-color: #000a1c;
+    border: solid 1px #7040ff;
+    border-radius: 20px;
+    padding: 15px;
+    top: 4px;
+    position: relative;
+    transition: all 2s;
+}
+.rock:active{
+    transition: all .2s;
+    background-color: #7040ff;
+}
+.paper:active{
+    transition: all .2s;
+    background-color: #7040ff;
+}
+.scissors:active{
+    transition: all .2s;
+    background-color: #7040ff;
+}
+.rock{
+    animation: rock 2s infinite ease;
+}
+@keyframes rock{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top:10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.paper{
+    animation: paper 2s infinite 1s ease;
+}
+@keyframes paper{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top:10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.scissors{
+    animation: scissors 2s infinite .5s ease;
+}
+@keyframes scissors{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top:10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.flex1{
+    height: 130%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 20px 0px;
+}
+.flex2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0px 40px 0px;
+}
+.load{
+    font-size: 50px;
+    padding: 30px;
+    margin: 50px 0px 50px 0px;
+    opacity: 0;
+    transition: all 2s;
+}
+@keyframes load{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+        font-size: 50px;
+    }
+    25%{
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(360deg);
+        font-size: 60px;
+    }
+    70%{
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        font-size: 50px;
+    }
+}
+.load.active{
+   animation: load 4s infinite ease;
+}
+.reply{
+    padding: 20px;
+    border: solid 1px #7040ff;
+    border-radius: 20px;
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+}
+.popup{
+    position: fixed;
+    top: 27%;
+    left: 44.5%;
+    z-index: 1;
+    width: 90%;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+    background: linear-gradient( 80deg, #0b0031, #0b0031, #0b0031, #0b0031, #2c0031);
+    border: solid 1px #31007c;
+    border-radius: 11px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    box-shadow: 2px 20x 1px black;
+}
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup.back{
+    transform: translate(-50%, -50%) scale(0);
+}
+.alert{
+    margin: 20px 10px 20px 10px;
+}
+.retry{
+    padding: 10px;
+    display: inline-block;
+    border: 0px;
+    position: relative;
+    place-item: center;
+    border-radius: 11px;
+    top: 4px;
+    color: white;
+    transitions: all .10s;
+    background-color: #7040ff;
+    font-size: 15px;
+    margin: 20px;
+    animation: retry 2s infinite ease;
+}
+@keyframes retry{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+@media only screen and (min-width: 800px){
+    .space{
+    min-height: 15vh;
+    }
+    .reply{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .flex1{
+        justify-content: center;
+        gap: 60px;
+    }
+    .flex2{
+        justify-content: center;
+        gap: 100px;
+    }
+    .popup{
+        width: 50%;
+        place-item: center;
+        left: 48%;
+        top: 12%;
+    }
+}
