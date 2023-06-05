@@ -37,7 +37,7 @@ a{
     color: white;
 }
 .button1{
-    padding: 10px;
+    padding: 20px;
     font-size: 30px;
     border: 0px;
     place-item: center;
@@ -64,7 +64,7 @@ a{
     }
 }
 #button2{
-    padding: 10px;
+    padding: 20px;
     font-size: 30px;
     border: 0px;
     place-item: center;
@@ -78,7 +78,7 @@ a{
     background-color: #000a1c;
 }
 #button3{
-    padding: 10px;
+    padding: 20px;
     font-size: 30px;
     border: 0px;
     place-item: center;
