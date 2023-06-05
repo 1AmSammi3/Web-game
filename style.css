@@ -37,8 +37,8 @@ a{
     color: white;
 }
 .button1{
-    padding: 0px 27px 0px 27px;
-    height: 32px;
+    padding: 10px;
+    font-size: 20px;
     border: 0px;
     place-item: center;
     position: relative;
@@ -64,8 +64,8 @@ a{
     }
 }
 #button2{
-    padding: 0px 27px 0px 27px;
-    height: 32px;
+    padding: 10px;
+    font-size: 30px;
     border: 0px;
     place-item: center;
     position: relative;
@@ -78,8 +78,8 @@ a{
     background-color: #000a1c;
 }
 #button3{
-    padding: 0px 27px 0px 27px;
-    height: 32px;
+    padding: 10px;
+    font-size: 30px;
     border: 0px;
     place-item: center;
     position: relative;
