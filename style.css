@@ -214,7 +214,6 @@ a{
     0%{
         opacity: 0;
         transform: rotate(0deg);
-        font-size: 50px;
     }
     25%{
         opacity: 1;
@@ -222,14 +221,12 @@ a{
     }
     50%{
         transform: rotate(360deg);
-        font-size: 60px;
     }
     70%{
         transform: rotate(0deg);
     }
     100%{
         opacity: 0;
-        font-size: 50px;
     }
 }
 .load.active{
