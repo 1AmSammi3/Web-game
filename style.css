@@ -69,26 +69,26 @@ a{
     border: 0px;
     place-item: center;
     position: relative;
-    border: solid 1px #7040ff;
-    border-radius: 11px;
-    top: 4px;
-    margin-right: 20px;
-    color: #7040ff;
-    transitions: all .10s;
-    background-color: #000a1c;
-}
-#button3{
-    padding: 20px;
-    font-size: 30px;
     border: 0px;
-    place-item: center;
-    position: relative;
     border-radius: 11px;
     top: 4px;
     margin-right: 20px;
     color: white;
     transitions: all .10s;
     background-color: #7040ff;
+}
+#button3{
+    padding: 20px;
+    font-size: 30px;
+    border: solid 1px #7040ff;
+    place-item: center;
+    position: relative;
+    border-radius: 11px;
+    top: 4px;
+    margin-right: 20px;
+    color: #7040ff;
+    transitions: all .10s;
+    background-color: #000a1c;
 }
 .button1:active{
     background-color: #000a1c;
@@ -97,15 +97,15 @@ a{
     transition: all .2s ease;
 }
 #button2:active{
-    background-color: #7040ff;
-    border: none;
-    color: white;
+    background-color: #000a1c;
+    border: solid 1px #7040ff;
+    color: #7040ff;
     transition: all .2s ease;
 }
 #button3:active{
-    background-color: #000a1c;
-    color: #7040ff;
-    border: solid 1px #7040ff;
+    background-color: #7040ff;
+    color: white;
+    border: 0px;
     transition: all .2s ease;
 }
 .space{
