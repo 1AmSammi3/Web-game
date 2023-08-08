@@ -37,8 +37,8 @@ a{
     color: white;
 }
 .button1{
-    padding: 20px;
-    font-size: 30px;
+    padding: 0px 27px 0px 27px;
+    height: 32px;
     border: 0px;
     place-item: center;
     position: relative;
@@ -64,31 +64,31 @@ a{
     }
 }
 #button2{
-    padding: 20px;
-    font-size: 30px;
+    padding: 0px 27px 0px 27px;
+    height: 32px;
     border: 0px;
     place-item: center;
     position: relative;
-    border: 0px;
-    border-radius: 11px;
-    top: 4px;
-    margin-right: 20px;
-    color: white;
-    transitions: all .10s;
-    background-color: #7040ff;
-}
-#button3{
-    padding: 20px;
-    font-size: 30px;
     border: solid 1px #7040ff;
-    place-item: center;
-    position: relative;
     border-radius: 11px;
     top: 4px;
     margin-right: 20px;
     color: #7040ff;
     transitions: all .10s;
     background-color: #000a1c;
+}
+#button3{
+    padding: 0px 27px 0px 27px;
+    height: 32px;
+    border: 0px;
+    place-item: center;
+    position: relative;
+    border-radius: 11px;
+    top: 4px;
+    margin-right: 20px;
+    color: white;
+    transitions: all .10s;
+    background-color: #7040ff;
 }
 .button1:active{
     background-color: #000a1c;
@@ -97,15 +97,15 @@ a{
     transition: all .2s ease;
 }
 #button2:active{
-    background-color: #000a1c;
-    border: solid 1px #7040ff;
-    color: #7040ff;
+    background-color: #7040ff;
+    border: none;
+    color: white;
     transition: all .2s ease;
 }
 #button3:active{
-    background-color: #7040ff;
-    color: white;
-    border: 0px;
+    background-color: #000a1c;
+    color: #7040ff;
+    border: solid 1px #7040ff;
     transition: all .2s ease;
 }
 .space{
@@ -214,6 +214,7 @@ a{
     0%{
         opacity: 0;
         transform: rotate(0deg);
+        font-size: 50px;
     }
     25%{
         opacity: 1;
@@ -221,12 +222,14 @@ a{
     }
     50%{
         transform: rotate(360deg);
+        font-size: 60px;
     }
     70%{
         transform: rotate(0deg);
     }
     100%{
         opacity: 0;
+        font-size: 50px;
     }
 }
 .load.active{
